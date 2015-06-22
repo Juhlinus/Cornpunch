@@ -1,3 +1,9 @@
+<?php 
+require 'vendor/autoload.php'; 
+
+use CornpunchCore\Session;
+use CornpunchCore\Database;
+?>
 <html>
 <head>
     <!--Meta-->
@@ -9,7 +15,7 @@
     <!--CSS and shit-->
     <link rel="stylesheet" href="css/main.css">
     <?php
-        include("php/includes.php");
+        //include("php/includes.php");
         if($session->checkSession()){
             header("Location: movies.php");
         }
